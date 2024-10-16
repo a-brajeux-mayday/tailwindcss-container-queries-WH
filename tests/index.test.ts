@@ -175,14 +175,14 @@ it('should be possible to use default container queries', () => {
       {
         raw: html`
           <div>
-            <div class="@md:underline"></div>
-            <div class="@lg:underline"></div>
-            <div class="@sm:underline"></div>
-            <div class="@xs:underline"></div>
-            <div class="@7xl:underline"></div>
-            <div class="@6xl:underline"></div>
-            <div class="@3xl:underline"></div>
-            <div class="@5xl:underline"></div>
+            <div class="@w-md:underline"></div>
+            <div class="@w-lg:underline"></div>
+            <div class="@w-sm:underline"></div>
+            <div class="@w-xs:underline"></div>
+            <div class="@w-7xl:underline"></div>
+            <div class="@w-6xl:underline"></div>
+            <div class="@w-3xl:underline"></div>
+            <div class="@w-5xl:underline"></div>
           </div>
         `,
       },
