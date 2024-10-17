@@ -16,7 +16,7 @@ export = plugin(
         (value = '', extra: { modifier: string | null }) => {
           const parsed = parseValue(value)
 
-          return parsed !== null ? `@container ${extra.modifier ?? ''} (${selector}: ${value})` : ''
+          return parsed !== null ? `@container ${extra.modifier ?? ''} (${selector}: ${value})` : []
         }
 
     const options = {
@@ -70,8 +70,8 @@ export = plugin(
     )
 
 //    matchVariant<string>('@', cbFor('min-width'), options)
-    matchVariant<string>('@w-', cbFor('min-width'), options)
-    matchVariant<string>('@h-', cbFor('min-height'), options)
+    matchVariant<string>('@w', cbFor('min-width'), options)
+    matchVariant<string>('@h', cbFor('min-height'), options)
   },
   {
     theme: {
